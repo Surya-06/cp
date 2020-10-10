@@ -1,6 +1,6 @@
 {
 	// stl function snippets
-	"vec_input" : {
+	"vec_input": {
 		"scope": "cpp",
 		"description": "take input into vector",
 		"prefix": "vec_input",
@@ -10,7 +10,7 @@
 			"$0"
 		]
 	},
-	"sort" : {
+	"sort": {
 		"scope": "cpp",
 		"description": "sort elements inside container",
 		"prefix": "sort",
@@ -19,7 +19,7 @@
 			"$0"
 		]
 	},
-	"fill" : {
+	"fill": {
 		"scope": "cpp",
 		"description": "fill elements of container",
 		"prefix": "fill",
@@ -28,7 +28,7 @@
 			"$0"
 		]
 	},
-	"sum" : {
+	"sum": {
 		"scope": "cpp",
 		"description": "find sum of elements in container",
 		"prefix": "sum",
@@ -37,8 +37,8 @@
 			"$0",
 		]
 	},
-	"print_container" : {
-		"scope": "cpp", 
+	"print_container": {
+		"scope": "cpp",
 		"description": "print contents of container using cout",
 		"prefix": "print",
 		"body": [
@@ -50,12 +50,22 @@
 			"$0"
 		]
 	},
-
+	"calc_boilerplate" : {
+		"scope": "cpp",
+		"description": "create boilerplate calc function",
+		"prefix": "calc",
+		"body": [
+			"${1:void} __calc__(){",
+			"\t$0",
+			"}"
+		]
+	},
 	"codeforces_boilerplate": {
 		"scope": "cpp",
 		"description": "boilerplate code for codeforces submissions",
 		"prefix": "codeforces",
 		"body": [
+			"// Created on $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}\t$CURRENT_HOUR:$CURRENT_MINUTE",
 			"#include <iostream>",
 			"#include <vector>",
 			"#include <algorithm>",
@@ -71,6 +81,9 @@
 			"",
 			"typedef long long int llint;",
 			"typedef long double ldouble;",
+			"typedef vector<bool> vbool;",
+			"typedef vector<llint> vint;",
+			"typedef vector<float> vfloat;",
 			"",
 			"",
 			"",
@@ -85,12 +98,12 @@
 			""
 		]
 	},
-
 	"cpp": {
 		"scope": "cpp",
 		"description": "basic cpp program",
 		"prefix": "cpp",
 		"body": [
+			"// Created on $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}\t$CURRENT_HOUR:$CURRENT_MINUTE",
 			"#include <iostream>",
 			"#include <vector>",
 			"#include <algorithm>",
